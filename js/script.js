@@ -10,11 +10,25 @@ console.log("JS OK");
 8 - Salvarlo in una variabile 
 */
 
+//Recupero l'elemento in pagina
+const targetElement = document.getElementById("target");
+
+//Domande
 const firstName = prompt("Come ti chiami?", "Eva");
 console.log(firstName);
 
-const lastName = prompt("Qual'e' il tuo cognome?", "Xausa");
+const lastName = prompt("Qual'é il tuo cognome?", "Xausa");
 console.log(lastName);
 
-const favouritecolor = prompt("Qual'e' il tuo colore preferito?", "giallo");
+const favouritecolor = prompt("Qual'é il tuo colore preferito?", "verde");
 console.log(favouritecolor);
+
+//Costruiamo la password
+const password = firstName + lastName + color + "21";
+console.log(password);
+
+//Build content
+constmessage = "La tua password é: " + password;
+
+//Inserisco in pagina
+targetElement.innerText = message;
